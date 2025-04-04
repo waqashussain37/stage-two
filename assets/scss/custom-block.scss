@@ -1,0 +1,39 @@
+.custom-block-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+
+    // Background color from Carbon Fields
+    background-color: var(--block-bg-color, #f8f9fa);
+
+    // Image styling
+    .custom-block-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    // Text Styling
+    .custom-block-text {
+        font-size: 18px;
+        color: #333;
+        margin-left: 20px;
+        flex: 1;
+    }
+
+    // Responsive Styles
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+
+        .custom-block-text {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.custom-block {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    .custom-block-content {
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    // On mobile, stack content
+    @media (max-width: 767px) {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    // On desktop, align content side by side
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
